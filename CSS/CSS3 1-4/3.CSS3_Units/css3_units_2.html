@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 단위 2</title>
+    <style>
+
+        /* 색상 단위 */
+
+        /* Hex 코드 단위 : red, green, blue 방식으로 이루어진 색상 표기법으로 #과 16진수로 이루어진 6자리 혹은 3자리의 수로 색상을 표기하는 방법 */
+        .hex-1{
+            color: #ff00005f;
+        }
+        .hex-2{
+            color: #f00;
+        }
+        /* RGB : red,green,blue 색상을 0~255까지 10진수로 표기하는 법*/
+        .rgb{
+            color: rgb(0, 0, 255);
+        }
+
+        /* RGBA : RGB에 0~1까지에 해당 하는 투명도(Alpha 채널)를 추가한 방법 0이 완전투명 1이 완전 불투명*/
+            .rgba{
+                color: rgba(9, 0, 255, 0.4);
+            }
+        /* HSL : 색상, 채도 ,명도 표기법으로 색상같은 경우는 0~360까지의 정수, 채도와 명도는 백분율로 표기 (0~100%)*/
+            .hsl{
+                color: hsl(120, 40%, 30%); /* (0: 빨강 120: 초록 240파랑)*/
+            }
+        /* HSLA : 0~1까지의 투명도(Alpha채널)를 추가한 방법 (0이 완전투명, 1이 완전불투명) */
+            .hsla{
+                color: hsla(200, 90%, 40%, 0.8);
+            }
+    </style>
+</head>
+<body>
+
+    <h3 class="hex-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+    <h3 class="hex-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+
+    <hr />
+
+    <h3 class="rgb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+
+    <hr />
+
+    <h3 class="rgba">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+
+    <hr />
+
+    <h3 class="hsl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+
+    <hr />
+
+    <h3 class="hsla">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+
+    <hr />
+    
+</body>
+</html>
